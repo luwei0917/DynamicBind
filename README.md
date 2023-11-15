@@ -28,10 +28,13 @@ Install
 
     conda install -c conda-forge openmm pdbfixer libstdcxx-ng openmmforcefields openff-toolkit ambertools=22 compilers biopython
 
+# checkpoints download
+Download and unzip the workdir.zip containing the model checkpoint form 10.5281/zenodo.10137507
+
 # Inference
 
 ## Dynamic Docking
-By default: RELAX processes are included, 40 poses will be predicted, poses will be ranked (rank1 is the best-scoring pose, rank40 the lowest).
+By default: 40 poses will be predicted, poses will be ranked (rank1 is the best-scoring pose, rank40 the lowest), relax processes are included.
 
 #### Inputs:
 1. **Protein (PDB File):** `protein.pdb` 
