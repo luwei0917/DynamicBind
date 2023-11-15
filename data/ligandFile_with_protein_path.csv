@@ -1,0 +1,5 @@
+protein_path,ligand
+./data/cleaned_input_proteinFile.pdb,CC(=O)Nc1cc(NC(=O)c2c(Cl)cccc2Cl)ccn1
+./data/cleaned_input_proteinFile.pdb,N#C[C@@H]1C[C@@H]1C(=O)Nc1cc(NC(=O)c2c(Cl)cccc2Cl)ccn1
+./data/cleaned_input_proteinFile.pdb,O=C(CO)Nc1cc(NC(=O)c2c(Cl)cccc2Cl)ccn1
+./data/cleaned_input_proteinFile.pdb,O=C(Nc1ccnc(NC(=O)[C@H]2C[C@H]2Cl)c1)c1c(Cl)cccc1Cl
