@@ -28,9 +28,8 @@ Install
 
     conda install -c conda-forge openmm pdbfixer libstdcxx-ng openmmforcefields openff-toolkit ambertools=22 compilers biopython
 
-# checkpoints download
-Download and unzip the workdir.zip containing the model checkpoint form 10.5281/zenodo.10137507
-
+# Checkpoints Download
+Download and unzip the workdir.zip containing the model checkpoint form https://zenodo.org/records/10137507
 # Inference
 
 ## Dynamic Docking
@@ -88,3 +87,5 @@ python run_single_protein_inference.py protein.pdb ligand.csv --hts --savings_pe
 HTS Output files:
 - `complete_affinity_prediction.csv`
 - `affinity_prediction.csv`
+
+# Dataset coming soon
