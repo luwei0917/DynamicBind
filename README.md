@@ -1,3 +1,5 @@
+# DynamicBind
+![](movie_reduced_fuzzed.gif)
 # Setup Environment
 
 Create a new environment for inference. While in the project directory run:
