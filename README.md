@@ -2,7 +2,11 @@
 ![](movie_reduced_fuzzed_v2.gif)
 # Setup Environment
 
-Create a new environment for inference. While in the project directory run:
+Create a new environment for inference. While in the project directory run 
+
+    conda env create -f environment.yml
+
+Or you setup step by step:
 
     conda create -n dynamicbind python=3.10
 

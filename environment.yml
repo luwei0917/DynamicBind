@@ -178,8 +178,7 @@ dependencies:
     - platformdirs==2.5.2
     - prompt-toolkit==3.0.36
     - psutil==5.9.0
-    - pycairo==1.23.0
-    - pyg-lib==0.2.0+pt20cu117
+    - https://data.pyg.org/whl/torch-2.0.0%2Bcu117/pyg_lib-0.2.0%2Bpt20cu117-cp310-cp310-linux_x86_64.whl
     - pygments==2.15.1
     - pyopenssl==23.0.0
     - pysocks==1.7.1
@@ -194,11 +193,11 @@ dependencies:
     - sqlalchemy==1.4.46
     - sympy==1.11.1
     - torch==2.0.1
-    - torch-cluster==1.6.1+pt20cu117
+    - https://data.pyg.org/whl/torch-2.0.0%2Bcu117/torch_cluster-1.6.1%2Bpt20cu117-cp310-cp310-linux_x86_64.whl
     - torch-geometric==2.3.0
-    - torch-scatter==2.1.1+pt20cu117
-    - torch-sparse==0.6.17+pt20cu117
-    - torch-spline-conv==1.2.2+pt20cu117
+    - https://data.pyg.org/whl/torch-2.0.0%2Bcu117/torch_scatter-2.1.1%2Bpt20cu117-cp310-cp310-linux_x86_64.whl
+    - https://data.pyg.org/whl/torch-2.0.0%2Bcu117/torch_sparse-0.6.17%2Bpt20cu117-cp310-cp310-linux_x86_64.whl
+    - https://data.pyg.org/whl/torch-2.0.0%2Bcu117/torch_spline_conv-1.2.2%2Bpt20cu117-cp310-cp310-linux_x86_64.whl
     - torchaudio==2.0.2
     - torchvision==0.15.2
     - tornado==6.2
