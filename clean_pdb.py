@@ -107,16 +107,17 @@ if args.input[-4:] == ".cif" or args.input[-4:] == ".pdb":
     clean_one_pdb(proteinFile, toFile)
 elif args.input[-4:] == ".csv":
     input_name = os.path.basename(args.input)[:-4]
+    output_name = os.path.basename(args.output)[:-4]
     df = pd.read_csv(args.input)
-    if os.path.exists(f'./data/tmp_{input_name}/'):
+    if os.path.exists(f'./data/tmp_{output_name}/'):
         # prevent the case when file content changed but file name is unchanged.
-        os.system(f"rm -r ./data/tmp_{input_name}/")
-    os.makedirs(f'./data/tmp_{input_name}/',exist_ok=False)
+        os.system(f"rm -r ./data/tmp_{output_name}/")
+    os.makedirs(f'./data/tmp_{output_name}/',exist_ok=False)
     new_protein_path = []
     for i in tqdm(df.index):
         proteinFile = df.loc[i,'protein_path']
         # toFile = f'./data/tmp/{os.path.basename(proteinFile)}'
-        toFile = f'./data/tmp_{input_name}/{os.path.basename(proteinFile)}'
+        toFile = f'./data/tmp_{output_name}/{os.path.basename(proteinFile)}'
         new_protein_path.append(toFile)
         if os.path.exists(toFile):
             continue

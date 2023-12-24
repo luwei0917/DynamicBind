@@ -94,4 +94,8 @@ HTS Output files:
 - `complete_affinity_prediction.csv`
 - `affinity_prediction.csv`
 
-# Dataset coming soon
+# Training and testing Dataset
+ https://zenodo.org/records/10429051
+
+
+
