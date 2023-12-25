@@ -1,5 +1,5 @@
 from rdkit import Chem
-from Bio.PDB import PDBParser
+from Bio.PDB import PDBParser, MMCIFParser
 import numpy as np
 from scipy.spatial.distance import cdist
 # based on TCS score in AlphaFill.
@@ -21,7 +21,7 @@ vdw_radii_table.update({"B":1.92, "C":1.70, "N":1.55, "O":1.52, "F":1.47, "S":1.
                    "Se":1.90, "Si":2.1, "Te":2.06,
                    "Fe":2.0, "V":2.0, "Pt":2.1, "As":2.0, "Ru":2.1, "Ir":2.1 })
 def compute_side_chain_metrics(pdbFile, ligandFile, vdw_radii_table=vdw_radii_table, verbose=True):
-    parser = PDBParser(QUIET=True)
+    parser = MMCIFParser(QUIET=True) if pdbFile[-4:] == ".cif" else PDBParser(QUIET=True)
     s = parser.get_structure(pdbFile, pdbFile)
     mol = Chem.MolFromMolFile(ligandFile)
     # compute clash.

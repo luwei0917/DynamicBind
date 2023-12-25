@@ -395,7 +395,8 @@ def compute_local_geometry_violations_protein_v3(ref_proteinFile, proteinFile):
     #     bond_dis_table[idx] = dis
     #     bond_index_table.append([i, j])
 
-    protein_pdb = openmm_app.PDBFile(proteinFile)
+    # protein_pdb = openmm_app.PDBFile(proteinFile)
+    protein_pdb = openmm_app.PDBxFile(proteinFile) if proteinFile[-4:] == ".cif" else openmm_app.PDBFile(proteinFile)
     bond_index_table = [[bond.atom1.index,bond.atom2.index] for bond in protein_pdb.topology.bonds()]
 
     violation_residue_idx = []
