@@ -1,5 +1,8 @@
 # DynamicBind
 ![](movie_reduced_fuzzed_v2.gif)
+
+Source code for the *Nature Communications* paper [DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model](https://www.nature.com/articles/s41467-024-45461-2)
+
 # Setup Environment
 
 Create a new environment for inference. While in the project directory run 
