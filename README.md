@@ -1,7 +1,9 @@
 # DynamicBind
-![](movie_reduced_fuzzed_v2.gif)
+Source code for the *Nature Communications* paper [DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model](https://www.nature.com/articles/s41467-024-45461-2).
 
-Source code for the *Nature Communications* paper [DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model](https://www.nature.com/articles/s41467-024-45461-2)
+DynamicBind recovers ligand-specific conformations from unbound protein structures (e.g. AF2-predicted structures), promoting efficient transitions between different equilibrium states.
+
+![](dynbind.gif)
 
 # Setup Environment
 
