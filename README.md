@@ -40,7 +40,7 @@ Install
     conda install -c conda-forge openmm pdbfixer libstdcxx-ng openmmforcefields openff-toolkit ambertools=22 compilers biopython
 
 # Checkpoints Download
-Download and unzip the workdir.zip containing the model checkpoint form https://zenodo.org/records/10137507
+Download and unzip the workdir.zip containing the model checkpoint form https://zenodo.org/records/10137507, v2 is contained here https://zenodo.org/records/10183369.
 # Inference
 
 ## Dynamic Docking
