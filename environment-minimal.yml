@@ -1,0 +1,36 @@
+name: dynamicbind-minimal
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - pyyaml
+  - rdkit
+  - biopython
+  # GPU PyTorch (CUDA 11.7)
+  - pytorch=2.0.1
+  - torchvision=0.15.2
+  - torchaudio=2.0.2
+  - pytorch-cuda=11.7
+  - pip:
+    - fair-esm==2.0.0
+    - e3nn==0.5.1
+    - spyrmsd==0.5.2
+    - matplotlib
+    - tqdm
+    - requests
+    - scikit-learn
+    - sympy
+    - sqlalchemy
+    - torch-geometric==2.3.0
+
+# Notes:
+# - This YAML pins PyTorch with CUDA 11.7; ensure your system has compatible NVIDIA drivers.
+# - After creating the environment, install PyG (torch-geometric) using the wheel URLs
+#   that match the exact installed `torch` + CUDA (example commands are in SETUP_MINIMAL.md).
